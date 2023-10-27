@@ -1,0 +1,59 @@
+.signup {
+  font-weight: 400;
+  background-color: rgb(247, 247, 247);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  /* background-image: url("https: //assets.bwbx.io/images/users/iqjWHBFdfxIU/ir0R.o5jJq3w/v0/-1x-1.jpg"); */
+}
+
+.signup h2 {
+  padding: 0.5rem 0.5rem 1rem 0.5rem;
+  margin: auto;
+}
+
+.signup-form {
+  padding: 2rem;
+  background-color: #fff;
+  width: 330px;
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+  justify-content: center;
+  align-items: flex-start;
+  border-radius: 1.5rem;
+}
+
+.signup-form input {
+  font-weight: 500;
+  border: 1px solid #00000029;
+  border-radius: 5px;
+  width: 97.5%;
+  padding: 0.4rem 0.2rem;
+  font-size: 1rem;
+  transition: all 0.3s;
+}
+
+.signup-form input:focus {
+  outline: 1px solid #00000050;
+  transition: all 0.3s;
+}
+
+.signup-form button {
+  border: 1px solid #00000029;
+  background-color: rgb(131, 48, 208);
+  color: #fff;
+  border-radius: 5px;
+  width: 100%;
+  padding: 0.2rem;
+  margin: 0.5rem auto;
+  font-size: 1.1rem;
+  transition: all 0.3s;
+}
+
+.signup-form button:hover {
+  background-color: rgb(1, 5, 252);
+  cursor: pointer;
+}

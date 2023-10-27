@@ -1,0 +1,50 @@
+.nav {
+  padding: 1rem;
+  background-color: antiquewhite;
+  display: flex;
+  justify-content: center;
+}
+
+.nav h1 {
+  color: rgba(3, 3, 3, 0.995);
+  font-size: 3rem;
+  font-weight: 700;
+  letter-spacing: 0.5rem;
+  text-shadow: 1px 1px 3px;
+  animation: color 3s infinite linear;
+}
+
+@keyframes color {
+  0% {
+    text-shadow: 3px 0px 2px;
+  }
+
+  50% {
+    text-shadow: -3px 0px 2px;
+  }
+
+  100% {
+    text-shadow: 3px 0px 2px;
+  }
+}
+
+.button {
+  background-color: rgba(255, 0, 0, 0.482);
+  border: 1px solid rgba(255, 0, 0, 0.482);
+  border-radius: 2rem;
+  padding: 0.5rem;
+  position: absolute;
+  right: 1rem;
+  align-self: center;
+  font-size: 1rem;
+  color: #fff;
+  transition: all 0.3s;
+}
+
+.button:hover {
+  background-color: transparent;
+  color: #000;
+  border: 1px solid #000;
+  transition: all 0.3s;
+  cursor: pointer;
+}
