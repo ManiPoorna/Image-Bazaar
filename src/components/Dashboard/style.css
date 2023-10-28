@@ -4,7 +4,7 @@
   border: 1px solid #0000006f;
   border-radius: 1rem;
   background-color: transparent;
-  width: 82%;
+  width: 78%;
   z-index: 100;
 }
 
@@ -21,6 +21,12 @@
   position: relative;
   margin: auto;
   width: 380px;
+}
+
+@media screen and (min-width : 320px) and (max-width: 450px) {
+.search-form {
+    width: 280px;
+  }
 }
 
 .search-btn {
@@ -46,6 +52,7 @@
   background-color: azure;
 }
 .image-container img{
+  min-width: 280px;
   flex-grow: 1;
   border-radius: 1rem;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;

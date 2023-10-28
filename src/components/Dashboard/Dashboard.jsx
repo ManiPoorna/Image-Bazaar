@@ -4,11 +4,12 @@ import "./style.css";
 import { useContext, useEffect, useState } from "react";
 import axios from "axios";
 import ThemeProvider, { ThemeContext } from "../../ThemeContext/ThemeContext";
+import { toast } from "react-toastify";
 
 const Dashboard = () => {
 
   const { theme, setTheme, switchTheme } = useContext(ThemeContext);
-  console.log(theme)
+  // console.log(theme)
   const [searchTerm, setSearchTerm] = useState("");
   const [data, setData] = useState([]);
   const [loading, setloading] = useState(false);
@@ -29,14 +30,14 @@ const Dashboard = () => {
           Authorization: "Client-ID o2DoX5p9nVj_3tzySg0xpZsb2UioALL9bVGAJMDkTCk",
         },
       });
-      console.log(response.data.results)
+      // console.log(response.data.results)
       setData(response.data.results)
       setTimeout(() => {
         setloading(false)
       }, 1000);
     }
     catch (err) {
-      console.log(err)
+      // console.log(err)
       setloading(false);
     }
   } 
@@ -44,7 +45,11 @@ const Dashboard = () => {
 
   function searchImages(e) {
     e.preventDefault();
-    getImages(searchTerm) 
+    if (searchTerm.length !== 0) {
+      getImages(searchTerm);
+    } else {
+      toast.error("Please enter a search");
+    }
   }
 
 

@@ -7,7 +7,6 @@ const Navbar = () => {
   const navigate = useNavigate();
   
   function handleLogout() {
-    console.log("clicked")
     navigate("/")
   }
   

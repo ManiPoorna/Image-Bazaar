@@ -24,7 +24,7 @@ const Signup = () => {
   function addUser(e) {
     e.preventDefault();
     setLoading(true);
-    console.log(name, email, password, cPassword);
+    // console.log(name, email, password, cPassword);
     if (name === "" || email === "" || password === "" || cPassword === "") {
       toast.error("All fields are required");
 
@@ -39,9 +39,9 @@ const Signup = () => {
       .then((userCredential) => {
         // Signed up
         const user = userCredential.user;
-        console.log(user);
+        // console.log(user);
         toast.success("SignUp Successful");
-        navigate("/image-bazaar");
+        navigate("/image-bazaar-dashboard");
         setLoading(false);
         setEmail("");
         setPassword("");
@@ -60,13 +60,13 @@ const Signup = () => {
   //function for login
   function loginUser(e) {
     e.preventDefault();
-    console.log("Login: ", email, password);
+    // console.log("Login: ", email, password);
     signInWithEmailAndPassword(auth, email, password)
       .then((userCredential) => {
         // Signed in
         const user = userCredential.user;
         toast.success("Login Successful");
-        navigate("/image-bazaar");
+        navigate("/image-bazaar-dashboard");
         // ...
       })
       .catch((error) => {
