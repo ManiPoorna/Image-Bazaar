@@ -1,8 +1,7 @@
 # IMAGE-BAZAAR 
 
-Basic application created on Vite + React
+Application created with Vite + React
 
-Understanding the concepts of Api calls Firebase Authentication ans Routing.
-
+Understanding the concepts of Api calls, Firebase Authentication and React Routing.
 
 Deployed Link : https://manipoorna-image-bazaar.netlify.app/
