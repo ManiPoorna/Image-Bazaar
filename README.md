@@ -1,4 +1,4 @@
-#IMAGE-BAZAAR 
+# IMAGE-BAZAAR 
 
 Basic application created on Vite + React
 
